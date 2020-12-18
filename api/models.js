@@ -9,6 +9,7 @@ module.exports = {
 function getResourceById(id) {
   return db('resource')
     .where({id})
+    .first()
 }
 
 function addResource(body) {
